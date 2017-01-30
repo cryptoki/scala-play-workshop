@@ -1,6 +1,3 @@
-/**
-  * Created by shaase on 29.01.17.
-  */
-class HelloWorld {
-
+object HelloWorld extends App {
+  override def main(args: Array[String]): Unit = println("Hello World")
 }
