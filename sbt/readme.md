@@ -58,10 +58,14 @@ for familiarity. By default, projects look something like this figure.
 
 https://github.com/rtimush/sbt-updates
 addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.3.0")
+* show dependencyUpdate
 
 https://github.com/jrudolph/sbt-dependency-graph
 addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.2")
+* show dependencyTree and dependencyBrowseGraph
+* and ```% test``` denken
 
 
 * u can add these to u're own build.sbt or set it to the global settings
+```~/.sbt/0.13/plugins/plugins.sbt```
 * I prefer for common utils the global settings
