@@ -1,3 +1,5 @@
+http://www.scala-sbt.org/0.13/docs/sbt-reference.pdf
+
 ### Features of sbt
 Source: http://www.scala-sbt.org
 - Little or no configuration required for simple projects
@@ -101,9 +103,34 @@ addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.3.0")
 https://github.com/jrudolph/sbt-dependency-graph
 addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.2")
 * show dependencyTree and dependencyBrowseGraph
-* and ```% test``` denken
+* reminder: remove ```% test``` for presentation purpose
 
 
 * u can add these to u're own build.sbt or set it to the global settings
 ```~/.sbt/0.13/plugins/plugins.sbt```
 * I prefer for common utils the global settings
+
+
+### Plugins
+
+#### What is a plugin?
+Source: http://www.scala-sbt.org
+````text
+A plugin extends the build de nition, most commonly by adding new settings. The new settings 
+could be new tasks. For example, a plugin could add a codeCoverage task which would generate 
+a test coverage report.
+````
+
+*Declaring a plugin*
+* add a file in the project directory, named special for the plugin or in general plugins.sbt
+* `addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.3.3")`
+
+*New Tasks for org.scoverage*
+* coverage
+* coverageAggregate
+* coverageCleanSubprojectFiles   
+* coverageEnabled
+* ...
+* coverageOff
+* ...
+* coverageReport 
