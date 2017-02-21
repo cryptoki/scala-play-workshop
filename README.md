@@ -1,20 +1,16 @@
-# Scala Workshop Module III - Play 2.5
+# Scala Workshop Module III - An Indroduction in SBT and Play 2.5
 
 ## Aufbau
 1. SBT - Simple Build Tool
-   * Wozu?
-   * Grundkonfiguration
+   * Why another build tool?
+   * basic configuration
+   * few helpers for the basic work
 
-2. Play
-   * Struktur
-   * Routes
-   * Aufgabe/Beispiel
+2. Play 2.5 - The Basics
+   * basic configuration
+   * routes
+   * example
    
 3. Futures
-   * Wozu?
-   * Einsatz
-   * Aufgabe/Beispiel
-   
-4. Einsatz in der EPDM
+4. How we use Play here at the EPD
 
-bla
