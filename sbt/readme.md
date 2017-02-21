@@ -122,11 +122,11 @@ a test coverage report.
 ### Helper
 
 https://github.com/rtimush/sbt-updates
-addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.3.0")
+`addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.3.0")`
 * show dependencyUpdate
 
 https://github.com/jrudolph/sbt-dependency-graph
-addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.2")
+`addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.2")`
 * show dependencyTree and dependencyBrowseGraph
 * reminder: remove ```% test``` for presentation purpose
 
