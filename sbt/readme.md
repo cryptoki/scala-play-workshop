@@ -1,3 +1,21 @@
+### Features of sbt
+Source: http://www.scala-sbt.org
+- Little or no configuration required for simple projects
+- Scala-based build definition that can use the full flexibility of Scala code
+- Accurate incremental recompilation using information extracted from the compiler
+- Continuous compilation and testing with triggered execution
+- Packages and publishes jars
+- Generates documentation with scaladoc
+- Supports mixed Scala/Java projects
+- Supports testing with ScalaCheck, specs, and ScalaTest. JUnit is supported by a plugin.
+- Starts the Scala REPL with project classes and dependencies on the classpath
+- Modularization supported with sub-projects
+- External project support (list a git repository as a dependency!)
+- Parallel task execution, including parallel test execution
+- Library management support: inline declarations, external Ivy or Maven configuration 
+  files, or manual management
+
+### Practice
 *cmd> sbt*
 - download any requirements
 
@@ -12,16 +30,30 @@
 - sbt.version=0.13.9
 - which version should be used for the project
 
+
 *build.sbt*
 - defines actual setting for the build
 
+## Library Management
+````
+libraryDependencies += groupID % artifactID % revision
+libraryDependencies += groupID % artifactID % revision % configuration
+````
 
-*commands*
+If you are using a dependency that was built with sbt, double the first % to be %%
+
+````
+libraryDependencies += groupID %% artifactID % revision
+````
+This will use the right jar for the dependency built with the version of Scala that you are currently using.
+
+## Commands
 - tasks .. the tasks you can run on the build
 - settings .. the settings you can modify for the project 
 - inspect .. information about a given setting or task
 
-*tasks*
+
+### Tasks
 Tasks are things that sbt build can do for you, like compiling a project, 
 creating documentation, or running tests. For now, let’s look at what sbt 
 provides out of the box:
@@ -49,12 +81,11 @@ for familiarity. By default, projects look something like this figure.
 ````
 
 *console*
-* interacting with the REPL
+* interacting with the REPL (Read-Evaluate-Print-Loop) - Scala Console
 * exit with :q
 
 
-*helper*
-
+### Helper
 
 https://github.com/rtimush/sbt-updates
 addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.3.0")

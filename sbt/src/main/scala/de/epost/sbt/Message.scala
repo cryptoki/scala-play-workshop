@@ -1,3 +1,3 @@
 package de.epost.sbt
 
-case class EngineMessage(text: String, owner: String)
+case class Message(text: String, owner: String)

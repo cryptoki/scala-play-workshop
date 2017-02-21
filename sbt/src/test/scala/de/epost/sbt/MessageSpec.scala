@@ -1,8 +1,8 @@
 package de.epost.sbt
 
-/**
-  * Created by shaase on 02.02.17.
-  */
-class MessageSpec {
+import org.scalatest.FlatSpec
+
+
+class MessageSpec extends FlatSpec {
 
 }
