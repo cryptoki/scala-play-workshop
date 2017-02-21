@@ -47,6 +47,13 @@ libraryDependencies += groupID %% artifactID % revision
 ````
 This will use the right jar for the dependency built with the version of Scala that you are currently using.
 
+````
+libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.6" % "test"
+libraryDependencies += "org.scalatest" % "scalatest_2.11" % "2.2.6" % "test"
+
+org.scalatest:scalatest_2.11:2.2.6:jar
+````
+
 ## Commands
 - tasks .. the tasks you can run on the build
 - settings .. the settings you can modify for the project 
