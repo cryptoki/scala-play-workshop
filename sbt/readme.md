@@ -132,5 +132,5 @@ addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.2")
 
 
 * u can add these to u're own build.sbt or set it to the global settings
-  ````~/.sbt/0.13/plugins/plugins.sbt````
+  `~/.sbt/0.13/plugins/plugins.sbt`
 * I prefer for common utils the global settings
