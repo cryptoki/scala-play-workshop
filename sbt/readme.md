@@ -134,3 +134,14 @@ https://github.com/jrudolph/sbt-dependency-graph
 * u can add these to u're own build.sbt or set it to the global settings
   `~/.sbt/0.13/plugins/plugins.sbt`
 * I prefer for common utils the global settings
+
+### Use dependencyUpdate
+* Update the specs2 version
+* use the ```reload``` command to re-examine the project definition and rewire 
+  project. it's necessary when u change the build.sbt
+   
+### scalac Options
+```
+scalacOptions ++= Seq("-feature", "-deprecation")
+```
+* ```feature``` 
