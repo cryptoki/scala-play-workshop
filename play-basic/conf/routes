@@ -2,10 +2,14 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# An example controller showing a sample home page
+# An example controller showing a sample page
 GET     /                           controllers.HelloController.index
 GET     /another                    controllers.HelloController.another
 GET     /stupid                     controllers.HelloController.stupid
+
+# a simple rest api ;) simple, simple, simple
+GET     /message/:id                controllers.RestController.get(id: Int)
+POST    /messages                   controllers.RestController.create
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
