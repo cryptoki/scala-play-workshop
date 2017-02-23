@@ -75,16 +75,16 @@ for familiarity. By default, projects look something like this figure.
 ````
  <build directory>/
     project/  .. sbt plugins and build helper code
-       src/ 
-          main/
-            scala/  .. Scala and Java sources
-            java/      are split by convention.
-            resources/
-          test/ 
-            scala/  .. Scala and Java sources
-            java/      are split by convention.
-            resources/ .. Resources are all noncompiled files 
-                          that should be on the classpath at runtime.
+    src/ 
+       main/
+         scala/  .. Scala and Java sources
+         java/      are split by convention.
+         resources/
+       test/ 
+         scala/  .. Scala and Java sources
+         java/      are split by convention.
+         resources/ .. Resources are all noncompiled files 
+                       that should be on the classpath at runtime.
     target/
     build.sbt  ..  Build file
 ````
