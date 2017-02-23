@@ -50,3 +50,19 @@ play {
   * ...
 
 
+### logback
+* play use logback lib
+* logback.xml
+* see simple logback.xml in project
+
+### add play support
+* plugins.sbt
+  
+  `addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.5.9")`
+* build.sbt
+  
+  `lazy val root = (project in file(".")).enablePlugins(PlayScala)`
+* try to run play application
+  
+  `help run`
+  `run`

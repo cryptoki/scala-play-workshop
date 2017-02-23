@@ -1,0 +1,26 @@
+<configuration>
+
+    <!-- specifies a conversion rule provided by play that adds color to the console output -->
+    <conversionRule conversionWord="coloredLevel" converterClass="play.api.libs.logback.ColoredLevel" />
+
+    <!-- configures the logging to standard output by creating an appender -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- defines the pattern in which messages are logged, see the logback doc-->
+            <pattern>%d{HH:mm:ss.SSS} %coloredLevel %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Logger used by the framework -->
+    <logger name="play" level="INFO"/>
+
+    <!-- Logger provided to your application -->
+    <!-- configures the level for each logger, you can add -->
+    <!-- more loggers here to customize the log level of third-party libraries -->
+    <logger name="application" level="DEBUG"/>
+
+    <root level="INFO">
+        <!-- defines which appender should be used for logging -->
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

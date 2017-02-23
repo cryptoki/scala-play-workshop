@@ -4,3 +4,5 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "2.2.2"
 ).map(_ % "test")
 scalaVersion := "2.11.8"
+
+lazy val root = (project in file(".")).enablePlugins(PlayScala)
