@@ -17,6 +17,10 @@ build.sbt
 * create folders and files
 * load project in IDEA and mark folders
 
+### Anatomy of a play application
+https://www.playframework.com/documentation/2.5.x/Anatomy
+
+
 ### application.conf
 ```
 play {
@@ -61,8 +65,23 @@ play {
   `addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.5.9")`
 * build.sbt
   
-  `lazy val root = (project in file(".")).enablePlugins(PlayScala)`
+  ```
+  // configuration of the main project
+  lazy val root = (project in file(".")).enablePlugins(PlayScala)
+  ```
 * try to run play application
   
   `help run`
   `run`
+
+
+### router
+* looks at the RequestHeader, analyzes
+  * method
+  * URI
+  * query string
+  
+  to  decide which action to pass the request to
+* play own textual format
+* located conf/routes
+* `GET  /test    controllers.Test.testAction` -> try to refresh u're application ;)
